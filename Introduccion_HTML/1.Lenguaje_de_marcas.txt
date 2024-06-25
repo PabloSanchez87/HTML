@@ -1,0 +1,71 @@
+LENGUAJE DE MARCAS.
+· Permite representar información y estructurarla.
+· No es un lenguaje de programación.
+
+Tipos:
+· Orientados al almacenamiento y procesado de la información: HTML, XML, JSON, DTD,...
+· Orientados a presentación: HTML, CSS
+
+Evolución:
+GML -> SGML -> HTML / XML
+
+Características:
+· Independencia de la infraestructura.
+· Formados por texto plano
+· Flexibles, admiten infinitas formas de estructuras la información
+· Compactabilidad --> Texto plano
+· Facilidad de procesamiento
+
+HTML --> especificación de XML
+· El más popular.
+· Lenguaje de la web
+· Gratuito
+· Gestionado por el W3c
+· Orientado a las personas
+· Su objetivos era estético pero evolucionó a un lenguaje semántico.
+· Ha conseguido:
+    - Democratizar la información
+    - Añadio algo nuevo, hipervínculos.
+    - Acceso público / privado.
+
+HTML5
+
+Etiqueta:
+· Elemento más importante en HTML
+· Nos servirá para marcar la información
+· Compuesta por varios elementos.
+· Ejemplo: <p class="greeting"> Hello, world!</p>
+              Nombre    Valor 
+                Atributo
+            Etiqueta apertura    Contenido    Etiqueta de cierre
+· Existen las etiquetas vacías.
+    <img src="logo.jpg" />    <br />  <hr />
+· Contenido:
+    - Información en texto.
+    - Más etiquetas.
+    - Etiquetas vacías.
+
+HTML + XML = XHTML --> Puntos importantes como buenas prácticas para HTML (no son obligatorias)
+· Las etiquetas se tienen que cerrar de acuerdo a como se abren.
+· Los nombres de las etiquetas y atributos siempre se escriben en minúsculas.
+· EL valor de los atributos siempre se encierran con comillas.
+· Todas las etiquetas deben cerrarse.
+
+Tipos de etiquetas:
+· Etiqueta de línea: Sea el tamñao que sea siempre ocupara lo que ocupe el contenido.
+· Etiqueta de bloque: Sea del tamaño que sea siempre ocuparan el ancho del navegador.
+
+Atributos.
+· Proveen de información a la etiqueta.
+· Una etiqueta puede tener o no no tener.
+· Una etiqueta puede tener tantos atributos como necesite, siempre que sean válidos.
+
+Tipos de atributos:
+· Atributos comunes : class, ide, lang, tittle, ...
+    - Básicos: id, class, style, tittle,...
+    - Internalización: lang, xml:lang, dir, ...
+    - De eventos: onblur, onclick, onfocus, onkeypress,..
+    - De foco: accesskey = "letra", tabindex = "numero", onfocus, onblur,...
+    - Vacíos (especiales): required
+· Atributos específicos de la etiqueta.
+· Atributos obligatorios y opcionales
