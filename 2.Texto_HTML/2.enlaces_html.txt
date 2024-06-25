@@ -1,0 +1,70 @@
+ENLACES
+<a>
+· La ustilizaremos para enlazar:
+    - Otros documentos internos.
+    - Documentos externos.
+    - Sección dentro del mismo documento.
+· Atributos básicos y de eventos.
+· Atributos específicos obligatorios.
+
+Atributos de un enlace (más importantes):
+<href>
+· El valor de este atributo será una url o un segmento de una url.
+· Es un atributo obligatorio.
+<download>
+· Es un atributo que puede ir vacío o puede contener el nombre del fichero con el que se descargará 
+    el documentos.
+· Para que funciones, la página debe ser servida por un servidor web no abriendo el archivo local.
+<target>
+· Este atributo indicará dónde quieres que se abra el enlace.
+· Opciones(más importantes):
+    - _blank: se abritá el destino en una pestaña nueva.
+    - _self: abre el enlace en la pestaña o <iframe> actual.
+<hreflang>
+· Establece el idioma del documento al que se accederá.
+· ISO 639-1
+
+Estados de un enlace:
+· Enlace sin visitas: Un enlace que no ha sido visitado aún es representado por los navegadores como
+    un enlace de color azul y subrayado.
+· Enlace vistados: Un enlace que ha sido visitado previamente es representado por los navegadores como
+    un enlace de color lila y subrayado.
+· Enlaces activos: Un enlace está en estado activo cuando el usuario está pulsando sobre el enlace con
+    el ratón y a la misma vez no ha dejado de pulsar en él.
+
+ESPACIOS EN BLANCO EN HTML
+· HTML no procesa más de un espacio seguido.
+· Tampoco tiene en cuenta los saltos de línea en texto.
+· Tiene propiedas específicas.
+
+· &nbsp; (entidad)-> espaciado manual (no se debe abusar)
+· Para escribir caracteres especiales debemos usar HTML Entities
+
+<br />
+· Salto de línea manual en cualquier bloque de texto.
+· Es una etiqueta vacía
+· Sin control en responsive (no se debe abusar)
+
+<wbr /> 
+· Oportunidad de salto de línea
+· Para palabras demasiado largas.
+· Controlamos por donde partirá la línea cuando sea necesario.
+
+<pre>
+· Bloque de código donde se respetan los espacios.
+· No es recomendable.
+· Se usa para mostras bloques de código generalmente.
+
+
+RUTAS RELATIVAS Y RUTAS ABSOLUTAS
+· Directorio activo: es el directorio en el que estamos actualmente.
+
+./ -> Directorio en el que estoy ahora mismo
+
+../ -> Directorio padre del directorio en el que estoy ahora mismo.
+
+Rutas relativas:
+· Determinan la ruta que debemos seguir partiendo desde el directorio activo.
+
+Rutas absolutas:
+· Determinan la ruta desde el directorio raíz. (información completa)

@@ -1,0 +1,73 @@
+ETIQUETES HX    
+<hx>
+- La x se sustituye por 1,2,3,4,5 y 6
+- Se utilizan para establecer cuáles son títulos de nuestros contenidos.
+- <h1> : Título de documento.
+    - Texto más importante de cada uno de nuestros documentos.
+    - Sólo debe haber una etiqueta h1 por cada documento.
+    - Debe indicar el tema principal de lo va nuestro documento.
+    - SEO
+- <h2> : Tema del documento.
+- <h3> : Sección de un tema.
+- <h4> : Apartado de una sección.
+- <h5> : Ejemplo del apartado.
+- <h6> : Subapartado del ejemplo.
+
+    NOTA: h2,.. no exite una limitación en cuanto al número dentro de un documento.
+        Si debemos tener en cuenta que no tiene sentido pasar del h2 al h4 sin 
+        tener un h3.
+
+ · Jeraquía de importancia. 
+ · Son etiquetas de bloque.
+ · No deben contener dentro otras etiquetas de bloque.
+
+ETIQUETA P
+<p>
+· Se utiliza para crear párrafos de texto.
+· Es una etiqueta de bloque.
+· Atributos comunes y de eventos.
+· Visualizan por defecto seprados entre ellos por arriba y por debajo.
+· Control del interlineado.
+· Empieza y termina siempre con una línea nueva.
+· Puede contener texto u otras etiquetas.
+· No debería contener otras etiquetas de bloque.
+
+ETIQUETA BLOCKQUOTE
+<blockquote>
+· Se utiliza pra indicar que el texto pertenece a otro sitio externo del cual se indica 
+    la fuente
+· Etiqueta de bloque
+· Atributos comunes y de eventos.
+· Atributo específico de cite de tipo url para indicar el origen de la cita.
+· No genera automáticamente comillas alrededor del contenidos. Se puede manejar con CSS.
+
+ETIQUETA CITE
+<cite>
+· cite es uno de los pocos identificadores de HTML que se emplea tanto como etiqueta como
+    atributor.
+· Es una etiqueta de línea, se renderiza en cursiva.
+· Atributos comunes y de eventos.
+· Como etiqueta se emplea para referenciar trabajo creativo.
+
+ETIQUETA CODE
+<code>
+· Se utiliza para indicar al navegador que el contenido de dicha etiqueta es un bloque de código 
+    fuente de  algudo de los lenguajes de programacion o marcado.
+· Es una etiqueta de línea, se renderiza con la fuente predeterminada monospace que tenga el 
+    navegador.
+· Atributos comunes y de eventos
+· Lo normal es darle estilos css asociados al tipo de lenguaje.
+
+ETIQUETA STRONG
+<strong>
+· Se utiliza para marcar el texto como importancia.
+· Etiqueta de línea
+· Normalmente el navegador renderiza el contenido en negrita
+· Además de la parte visual, strong tiene un significado semántico.
+
+ETIQUETA EM
+<em>
+· Se utiliza para marcar una parte del texto con más énfasis.
+· Tiene menos importancia que strong
+· Atributos comunes
+· El navegador lo renderizará por defecto como texto en cursiva en la mayoría de los casos.
