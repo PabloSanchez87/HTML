@@ -1,0 +1,101 @@
+# ETIQUETAS SEMÁNTICAS
+· Etiquetas de agrupación
+· Etiquetas de bloque
+· Ayudan a nivel de SEO y accesibilidad.
+
+## ETIQUETAS SEMANTICAS DE ESTRUCTURA
+# <article></article>
+· Una de las más importantes de HTML5
+· No se trta de una etiqueta para definir artículos.
+· Sirve para definir partes con las suficiente importancia como para
+    considerarse una entidad destacable con información a su alrededor.
+· Dependerá de la página.
+    Ejemplos: artículo de un blog, una receta de cocina, un vídeo, ...
+· Es posible encontrar etiquetas article dentro de otras etiquetas article 
+    Ejemplo. Noticia recomendadas dentro de otra noticia.
+
+# <nav></nav>
+· Englobará una lista de enlaces que normalmente será el menú de navegación
+    de la web
+· Dentro del nav podrá haber una sucesión de etiquetas o una lista de elementos.
+· Ayudará a los robots y navegadores sin gráficos a anavegar por nuestra web
+· Es posible tener más de una etiqueta nav en la página. (header - footer)
+
+# <header></header>
+· Encerrará a la zona común de la parte superior de nuestra web.
+· normalmente estará cpmpuesto por el logotipo y demás componentes que se repiten
+    en todas las páginas de la web
+· No confundir header con header
+· Es posible encontrar tmb denrto de una sección o un article otra etiqueta header.
+    Por ejemplo en la cebecera de un post de un blog.
+
+# <footer></footer>
+· Encerrará a la zona común de la parte inferior de la web
+· Normalmente estará compuesto por el menú inferior, páginas legales, copyright y 
+    demás componentes que se repiten en todas las páginas.
+· Es posible encontrar tmb denrto de una sección o un article otra etiqueta footer.
+    
+# <section></section>
+· Nos permite agrupar una sección de nuestro documento web.
+· Una forma fácil de saber si una parte de nuestra web es una sección, es cuando 
+    pensamos en dicha agrupación y colocamos una cabecera para identificarla.
+· Ejemplos:
+    - Cada una de las partes de la página web
+    - Cada capítulo de un documento
+    - Cada una de las pestañas o tabs de un cuadro de diálogo.
+    - Cada una de las secciones numeradas de un documento
+
+# <main></main>
+· La utilizaremos para agrupar el conjunto de contenido de nuestra página web
+· A grandes rasgos es como si fuera la parte central y relevante de la misma
+· Suele ser elemento hijo de etiqueas como body o div.
+
+# <aside></aside>
+· Contraposición del main
+· Normalmente lleva dentro la parte más irrelevante de la página
+· Permite agrupar contenido que no es considerado el principal de un documento,
+    es decir, el contenido secundario o que no tiene relación directa con el tema
+    principal del documento.
+· Ejemplo: menú o sidebars, publicidad, zonas navegación,...
+
+## ETIQUETAS SEMÁNTICAS DE TEXTO
+· Nos ayudan a ar relevancia a partes del TEXTO
+· Suelen ser etiquetas de línea
+· Aportan valor semántico a nuestros textos.
+· No deberían tener significado gráfico o visual. Otra cosas es que los navegadores
+    por defcto dispongan su presentación de forma resaltada.
+· Debemos centrarnos en el significado semántico de las mismas.
+
+# <strong></strong>
+· Sirve para dar más relevancia
+· Es una etiqueta de línea
+
+# <em></em>
+· Sirve para darle énfasis a una parte del texto comparado con el resto
+· Normalmente será msotrado en cursiva
+· Etiqueta de línea
+
+# <time></time>
+· Lo usaremos para marcar una fecha o una hora
+· Accesibilidad
+· Dispone de un atributo datetime en formato timestamps en formato string.
+
+# <adress></adress>
+· Lo usaremos para indicar la forma de contacto o dirección que mostraremos en 
+    nuestra web
+· Accesibilidad
+· Puede ser desde una url, direccion, email,...
+
+
+## ETIQUETAS NO RECOMENDADAS QUE NOS ENCONTRAREMOS MUCHO ##
+<b> mejor <strong>
+<i> mejor <em>
+<small> <u>
+· Son etiquetas que mezclan la presentación con la información.
+
+
+
+
+
+
+

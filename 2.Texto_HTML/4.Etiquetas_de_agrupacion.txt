@@ -1,0 +1,101 @@
+## ETIQUETAS DE AGRUPACIÓN
+· ¿Para qué agrupar?
+    - Idendificar como una sección específica
+    - Para darle estilo visual con CSS
+    - Para darle funcionalidad con JS
+· Hay que encontrar el equilibrio entre ser odernados y tener
+    etiquetas de más. 
+
+## Recurso:
+"can i incluide" --> para saber si una etiqueta puede estar dentro de otra.
+
+# <section></section>
+# <main></main>
+# <header></header>
+# <footer></footer>
+# <aside></aside>
+# <article></article>
+# ...
+· Todas las etiquetas semánticas son a la vez de agrupación
+· Se encargan precisamente de eso, de agrupar contenido semántico.
+
+# <div></div>
+· Etiqueta más utiliza.
+· Pero realmente es de las que menos sirve.
+· Atributos comunes y eventos.
+· Etiqueta muy simpre que se suele utilizar para crear una agrupación
+    de una o varias etiquetas y organizarlas en una división específica.
+· No aporta ningún significado semántico.
+
+# <span></span>
+· Hace lo mismo que div, pero para elementos de línea
+· Se abusa de ella, no aporta semántica de ningún tipo.
+· No cambia el flujo natural del texto.
+
+# <blockquote></blockquote>
+· Se utilizaba para indicar que el texto pertenece a otro sitio externo del
+    cual se indica la fuente
+· Etiqueda de bloque
+· Atributos comunes y eventos.
+· Atributo específico cite de tipo url para indicar el origen de la cita.
+
+# <hr></hr>
+· Se utiliza para separar bloques de contenido de otros bloques de contenido.
+· Inserta una línea horizontal
+· Es un elemento de bloque.
+· Cada navegador va a pintar la línea a su manera.
+· La podemos encontrar además como etiqueta de separación semántica.
+· Aporta semántica, la separación de un tema con otro.
+· Lo visual no es relevante porque se puede personalizar.
+
+
+## Listas
+# <ul></ul>  # <ol></ol>
+· Son elementos de bloque
+· Se utilizan para organizar información en formato de listado
+· Disponen de etiquetas hijas li
+· Ambas funcionan de la misma manera, lo único que cambia es el orden.
+
+# <ul></ul>
+· Siglas de lista sin orden
+· Se utilizará para listar una serie de elementos en los que no importa el orden.
+
+# <ol></ol>
+· Orderer list
+· Se utilizará para listar una serie de elementos en los que importa el orden
+· Lista de pasos a seguir
+· Diferentes tipos de numeración
+
+# <li></li>
+· List item
+· Elemento de bloque
+· Dependerá del padre de su presentación si es con viñeta o con número.
+
+# <dl></dl>
+· Definition/Description list
+· Se utilizará para listar elemento y definirlos
+· Muy usada en diccionarios.
+· No dispone de etiquetas hija li.
+· <dt></dt> Término a definir
+· <dd></dd> Definición del término.
+
+
+## Listas anidadas
+· Una lista puede contener otra lsita en su interior.
+· SIEMPRE DENTRO DE UN LI
+· Hay que tener especial cuidado a la hora de abrir y cerrar etiquetas,  
+    de lo contrario será inmanejable.
+· Pueden mezclarse tipos de lista.
+
+
+# <figure></figure>
+· Figure es una etiqueta de agrupación para imágenes.
+· Encerrará a una etiqueta img básica.
+· Se manejará mucho mejor con CSS en el futuro.
+· Recordar que en la ilustración o figura, se pueden contener todo tipo de elementos,
+    no sólo imágenes. Ejemplo: vídeos, párrafos,...
+
+# <figcaption></figcaption>
+· Figcaption añade significado semántico a la imagen
+· Ayudará al atributo alt del img
+· Normalmente se utiliza como texto pie de la imagen
