@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejemplo de table - colspan + rowspan</h1>
+    <hr>
+    <h2>Colspan complejo</h2>
+    <table border="1">
+        <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td colspan="2">D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td colspan="4">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Rowspan complejo</h2>
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Colspan + rowspan complejo</h2>
+    <table border="1">
+        <caption>Análisis de ventas anuales.</caption>
+        <tr>
+            <th rowspan="2">AÑO</th>
+            <th colspan="4">Expansión de ventas</th>
+        </tr>
+        <tr>
+            <th>Producto A</th>
+            <th>Producto B</th>
+            <th>Producto C</th>
+            <th>Producto D</th>
+        </tr>
+        <tr>
+            <th>N-3</th>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th>N-2</th>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>N-1</th>
+            <td>4</td>
+            <td>4</td>
+            <td>7</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>N</th>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th rowspan="2">AÑO</th>
+            <th>Producto A</th>
+            <th>Producto B</th>
+            <th>Producto C</th>
+            <th>Producto D</th>
+        </tr>
+        <tr>
+            <th colspan="4">Expansión de ventas</th>
+
+        </tr>
+    </table>
+        
+    <hr>
+    <footer>
+        © Pablo Sánchez
+    </footer>
+</body>
+</html>

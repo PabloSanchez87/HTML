@@ -72,3 +72,112 @@
 - [Ver código tabla curso de diseño](tabla4_curso_diseño.html)
 
 - [Ver código tabla desempleo](tabla5_desempleo.html)
+---
+
+### `<colspan>`
+- Atributo de las celdas `<th>` y `<td>`
+- Nos servirán para fusionar celdas adyacentes por columnas.
+- Una tabla puede ser sencilla o compleja, dependiendo de nuestros objetivo y la cantidad de etiquetas o atributos a utilizar.
+```html
+<table>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+        <tr>
+            <td>Manzanas</td>
+            <td>$1.00</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Naranjas</td>
+            <td>$0.80</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>$28.00</td>
+        </tr>
+    </table>
+```
+
+- [Ver código tabla colspan](tabla6_colspan.html)
+
+---
+### `<rowspan>`
+- Atributo de las celdas `<th>` y `<td>`
+- Nos servirán para fusionar celdas adyacentes por las filas.
+
+```html
+<table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Juan</td>
+            <td>25</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Barcelona</td>
+        </tr>
+        <tr>
+            <td>Carmen</td>
+            <td>30</td>
+            <td>Valencia</td>
+        </tr>
+</table>
+```
+
+- [Ver código tabla rowspan](tabla6_colspan.html)
+
+---
+
+### `<colspan>` + `<rowspan>`
+- Consejos:
+    - Contabilizar el total de filas.
+    - Contabilizar total de columnas
+    - Comprobar que la suma de td's + colspan dan el total de columnas por fila
+    - Comprobar que la suma de tr + rowspan dan el total de filas por columna,
+
+<br>
+<div style="text-align: center;">
+  <img src="Tabla_compleja.png"/>
+</div>
+<br>
+
+- [Ver código tabla imagen](tabla8_colspan-rowspan.html)
+
+
+## Tablas semánticas
+- Ayudan al igual que las etiquetas semánticas a ñadir significado a los datos tabulados.
+- Dividiremos las tablas en tres partes.
+
+<br>
+<div style="text-align: center;">
+  <img src="imagen_table.png"/>
+</div>
+<br>
+
+### `<thead>`
+- Aglutinará todas las filas con celdas de cabecera.
+- Etiqueta hija de `<tbody>`
+- Aporta semántica a nuestras tablas
+
+### `<tbody>`
+- Contendrá todas los datos de la tabla
+- Después de `<thead>` siempre y cuando no exista `<tfoot>`
+
+### `<tfoot>`
+- Siempre antes del `<tbody>`
+- Sirve para acumulados, contabilizaciones o repetir la cabecera.
+
+
+### Ejemplo de tabla semántica.
+- [Ver código tabla imagen](tabla9_semantica.html)
+
+---
