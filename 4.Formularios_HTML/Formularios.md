@@ -147,16 +147,6 @@
 
 ---
 
-<h3>Ejemplo de formulario</h3>
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<br>
-
 - Código ejemplo:
 ```html
 <form action="/action_page.php">
@@ -166,30 +156,6 @@
   <input type="text" id="lname" name="lname"><br><br>
   <input ty
 ```
----
-<h3>Ejemplo de formulario</h3>
-<form action="/ruta-del-servidor" method="post">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre"><br><br>
-    <label for="email">Correo Electrónico:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="password">Contraseña:</label><br>
-    <input type="password" id="password" name="password"><br><br>
-    <label for="fecha">Fecha de Nacimiento:</label><br>
-    <input type="date" id="fecha" name="fecha"><br><br>
-    <label for="genero">Género:</label><br>
-    <select id="genero" name="genero">
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option>
-    </select><br><br>
-    <label>Intereses:</label><br>
-    <input type="checkbox" id="deportes" name="intereses" value="deportes">
-    <label for="deportes">Deportes</label><br>
-    <input type="checkbox" id="musica" name="intereses" value="musica">
-    <label for="musica">Música</label><br>
-    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
-    <label for="tecnologia">Tecnología</label><br><br>
-    <input type="submit" value="Enviar">
-</form>
+- [Ver código formulario Google](formulario_google.html)
+- [Ver código formulario](formulario_sencillo.html)
 
