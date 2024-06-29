@@ -159,3 +159,282 @@
 - [Ver código formulario Google](formulario_google.html)
 - [Ver código formulario](formulario_sencillo.html)
 
+---
+
+### Atributos en la etiqueta `<input>`
+- Importancia name y value
+  - Recordar que cuando se van a enviar al servidor se enviarán en pareja. 
+  - { Clave - valor }
+    - Clave va a ser el valor del atributo name
+    - Valor será el valor del atributo value
+
+- `name`
+  - Especifica el nombre del campo de entrada.
+  ```html
+  <input type="text" name="exampleText" />
+  ```
+
+- `value`
+  - Especifica el valor inicial del campo de entrada.
+  ```html
+  <input type="text" name="exampleText" value="Initial value" />
+  ```
+
+- `Text`    
+  - Permite al usuario ingresar texto de una sola línea.
+  ```html
+  <input type="text" name="exampleText" />
+  ```
+
+- `URL`
+  - Permite al usuario ingresar una URL, con validación automática de formato.
+  ```html
+  <input type="url" name="exampleURL" />
+  ```
+
+- `Number`
+  - Permite al usuario ingresar un número, con opciones de incremento y decremento.
+  ```html
+  <input type="number" name="exampleNumber" />
+  ```
+
+- `Password`
+  - Permite al usuario ingresar una contraseña, ocultando los caracteres ingresados.
+  ```html
+  <input type="password" name="examplePassword" />
+  ```
+
+- `Email`
+  - Permite al usuario ingresar una dirección de correo electrónico, con validación automática del formato.
+  ```html
+  <input type="email" name="exampleEmail" />
+  ```
+
+- `Button`
+  - Un botón que puede configurarse para realizar cualquier acción definida por JS.
+  ```html
+  <input type="button" value="Click Me" />
+  ```
+
+- `Submit`
+  - Un botón que envía el formulario cuando es clickeado.
+  ```html
+  <input type="submit" value="Submit" />
+  ```
+
+- `File`
+  - Permite al usuario seleccionar un archivo para subir.
+  ```html
+  <input type="file" name="exampleFile" />
+  ```
+
+- `Hidden`
+  - Un campo que n es visible para el usuario, utilizado para almacenar información en el formulario.
+  ```html
+  <input type="hidden" name="exampleHidden" value="secretValue" />
+  ```
+
+- `Checkbox`
+  - Permite al usuario seleccionar una o más opciones de un conjunto.
+  ```html
+  <input type="checkbox" name="exampleCheckbox" />
+  ```
+
+- `Radio`
+  - Permite al usuario seleccionar solo una opción de un conjunto de opciones.
+  ```html
+  <input type="radio" name="exampleRadio" value="option1" />
+  ```
+
+- `Color`
+  - Permite al usuario seleccionar un color usando un selector de color.
+  ```html
+  <input type="color" name="exampleColor" />
+  ```
+
+- `Date`
+  - Permite al usuario seleccionar una fecha del calendario.
+  ```html
+  <input type="date" name="exampleDate" />
+  ```
+
+- `Datetime-local`
+  - Permite al usuario selecciona una fecha y una hora (sin zona horaria).
+  ```html
+  <input type="datetime-local" name="exampleDatetimeLocal" />
+  ```
+
+- `Imagen`
+  - Se usa para enviar un formulario cuando se hace clic en la imangen.
+  ```html
+  <input type="image" src="example.jpg" alt="Example Image" />
+  ```
+
+- `Month`
+  - Permite al usuario seleccionar un mes y un añi, sin día específico.
+  ```html
+  <input type="month" name="exampleMonth" />
+  ```
+
+- `Range`
+  - Permite al usuario seleccionar un valor de un rango específido (deslizador)
+  ```html
+  <input type="range" name="exampleRange" />
+  ```
+
+- `Reset`
+  - Restablece todos los calores de los campos del formulario o sus valores iniciales.
+  ```html
+  <input type="reset" value="Reset" />
+  ```
+
+- `Search`
+  - Permite al usuario ingresar una cadena de búsqueda, a menudo acompañado de funciones de autocompletar y sugerencias.
+  ```html
+  <input type="search" name="exampleSearch" />
+  ```
+
+- `Tel`
+  - Permite al usuario ingresar un número de teléfono.
+  ```html
+  <input type="tel" name="exampleTel" />
+  ```
+
+- `Time`
+  - Permite al usuario seleccionar una hora.
+  ```html
+  <input type="time" name="exampleTime" />
+  ```
+
+- `Week`
+  - Permite al usuario seleccionar una semana y un año, sin un día específico.
+  ```html
+  <input type="week" name="exampleWeek" />
+  ```
+
+- `accept`
+  - Especifica los tipos de archivos que el servidor acepta (usado con input type="file").
+  ```html
+  <input type="file" accept="image/*" />
+  ```
+
+- `alt`
+  - Texto alternativo para los botones de tipo imagen.
+  ```html
+  <input type="image" src="example.jpg" alt="Example Image" />
+  ```
+
+- `autocomplete`
+  - Habilita o deshabilita el autocompletado.
+  ```html
+  <input type="text" name="exampleText" autocomplete="on" />
+  ```
+
+- `autofocus`
+  - Establece el foco automático en el campo de entrada cuando la página se carga.
+  ```html
+  <input type="text" name="exampleText" autofocus />
+  ```
+
+- `checked`
+  - Indica que un input de tipo radio o checkbox debe seleccionarse inicialmente.
+  ```html
+  <input type="checkbox" name="exampleCheckbox" checked />
+  ```
+
+- `disabled`
+  - Desactiva el campo de entrada.
+    ```html
+    <input type="text" name="exampleText" disabled />
+    ```
+
+- `form`
+  - Asocia el campo de entrada con uno o más formularios.ç
+  ```html
+  <input type="text" name="exampleText" form="formId" />
+  ```
+
+- `formaction`
+  - Especifica la URL a la que se envía el formulario cuando se envía el input de tipo submit o image.
+  ```html
+  <input type="submit" formaction="/submit-form" />
+  ```
+
+- `list`
+  - Asocia el campo de entrada con una lista de datos.
+  ```html
+  <input type="text" list="datalistId" />
+  <datalist id="datalistId">
+    <option value="Option 1">
+    <option value="Option 2">
+  </datalist>
+  ```
+
+- `max`
+  - Especifica el valor máximo permitido.
+  ```html
+  <input type="number" name="exampleNumber" max="10" />
+  ```
+
+- `maxlength`
+  - Especifica el número máximo de caracteres permitidos.
+  ```html
+  <input type="text" name="exampleText" maxlength="10" />
+  ```
+
+- `min`
+  - Especifica el valor mínimo permitido.
+  ```html
+  <input type="number" name="exampleNumber" min="1" />
+  ```
+
+- `multiple`
+  - Permite seleccionar múltiples archivos (usado con input type="file").
+  ```html
+  <input type="file" name="exampleFile" multiple />
+  ```
+
+- `pattern`
+  - Especifica una expresión regular que el valor debe coincidir.
+  ```html
+  <input type="text" name="exampleText" pattern="\d{3}-\d{2}-\d{4}" />
+  ```
+
+- `placeholder`
+  - Especifica un texto que se muestra en el campo de entrada cuando está vacío.
+  ```html
+  <input type="text" name="exampleText" placeholder="Enter text here" />
+  ```
+
+- `readonly`
+  - Hace que el campo de entrada sea de solo lectura.
+  ```html
+  <input type="text" name="exampleText" readonly />
+  ```
+
+- `required`
+  - Indica que el campo de entrada es obligatorio.
+  ```html
+  <input type="text" name="exampleText" required />
+  ```
+
+- `size`
+  - Especifica el ancho del campo de entrada (en caracteres).
+  ```html
+  <input type="text" name="exampleText" size="30" />
+  ```
+- `src`
+  - Especifica la URL de la imagen (usado con input type="image").
+  ```html
+  <input type="image" src="example.jpg" />
+  ```
+
+- `step`
+  - Especifica el intervalo de validación de números.
+  ```html
+  <input type="number" name="exampleNumber" step="0.1" />
+  ```
+
+
+
+
