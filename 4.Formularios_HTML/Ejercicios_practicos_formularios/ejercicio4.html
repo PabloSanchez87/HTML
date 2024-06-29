@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 4</h1>
+        <p><a href="index.html">👈 Volver atrás </a></p>
+        <hr />
+    </header>
+
+    <main>
+        <h2>Formulario información sobre un producto</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos básicos</legend>
+
+                <p>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </p>
+
+                <p>
+                    <label for="descripcion">Descripción</label><br>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="5"
+                        placeholder="Introduzca breve descripción"></textarea>
+                </p>
+
+                <!-- Importante cuando queramos enviar una imagen -->
+                <!-- Tenemos que usar POST en el method -->
+                <!-- Y tenemos que poner enctype="multipart/form-data" si no no llegará al backend -->
+                <p>
+                    <label for="photo">Foto</label>
+                    <input type="file" name="photo" id="photo">
+                </p>
+
+                <p>
+                    <input type="checkbox" name="contador" id="contador">
+                    <label for="contador">Añadir contador de visitas</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos económicos</legend>
+
+                <p>
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio" size="3" step="0.5" min="0" placeholder="Precio" style="width: 70px;"> €
+
+                    <label for="impuestos">Impuestos</label>
+                    <select name="impuestos" id="impuestos">
+                        <option value="">-</option>
+                        <option value="4">4</option>
+                        <option value="7">7</option>
+                        <option value="16">16</option>
+                        <option value="21">21</option>
+                    </select>
+                </p>
+
+                <div>
+                    Promoción <br>
+                    <p>
+                        <input type="radio" name="promo" id="ninguno" value="">
+                        <label for="ninguno">Ninguno</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="promo" id="gratis" value="gratis">
+                        <label for="gratis">Transporte gratuito</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="promo" id="des5" value="des5">
+                        <label for="des5">Descuento del 5 %</label>
+                    </p>
+                </div>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <hr />
+        © Pablo Sánchez
+    </footer>
+</body>
+
+</html>

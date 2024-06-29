@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 3</h1>
+        <p><a href="index.html">👈 Volver atrás </a></p>
+        <hr />
+    </header>
+
+    <main>
+        <h2>Formulario Curriculum Vitae</h2>
+        <form action="" method="get">
+            <fieldset>
+                <legend> Datos personales </legend>
+
+                <p>
+                    <label for="provincia">Provincia</label><br>
+                    <select name="provincia" id="provincia">
+                        <option value="">-- Selecciona --</option>
+                        <option value="AC">A Coruña</option>
+                        <option value="LU">Lugo</option>
+                        <option value="OU">Ourense</option>
+                        <option value="PO">Pontevedra</option>
+                        <option value="AS">Asturias</option>
+                        <option value="LE">Leon</option>
+                        <option value="PA">Palencia</option>
+                        <option value="VA">Valladolid</option>
+                        <option value="ZA">Zamora</option>
+                        <option value="SE">Segovia</option>
+                    </select>
+                </p>
+
+                <p>
+                    Fecha de nacimiento - Opción 1 <br>
+                    <input type="number" name="dia" placeholder="día" min="1" max="31" step="1"> de
+                    <select name="mes" id="mes">
+                        <option value="">-- mes --</option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select> de
+                    <input type="number" name="year" id="year" size="4" placeholder="año" min="1900" max="2100" step="1"
+                        maxlength="4">
+                </p>
+
+                <p>
+                    <label for="fecha"> Fecha de nacimiento - Opción 2</label><br>
+                    <input type="date" id="fecha" name="fecha" min="1900-01-01" max="2100-12-31">
+                </p>
+
+                <p>
+                    <label for="temas">Temas de interés</label><br>
+                    <select name="temas" id="temas" size="5" multiple>
+                        <option value="ABD" title="Segundo año">Administración de bases de datos</option>
+                        <option value="AP" title="Primer año">Análisis y programación</option>
+                        <option value="EC" title="Primer año">Estructura de computadores</option>
+                        <option value="SD" title="Primer año">Sistemas digitales</option>
+                        <option value="POO" title="Segundo año">Programación orientada a objetos</option>
+                        <option value="R" title="Segundo año">Redes</option>
+                        <option value="UI" title="Tercer año">UI/UX</option>
+                        <option value="QA" title="Tercer año" >Calidad QA</option>
+                    </select>
+                </p>
+            </fieldset>
+            
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <hr />
+        © Pablo Sánchez
+    </footer>
+</body>
+
+</html>
