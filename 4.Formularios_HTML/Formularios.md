@@ -147,6 +147,32 @@
 
 ---
 
+### Etiwueta `<label>`
+- Se utiliza para definir una etiqueta para un elemento `<input>`
+- Principal poósito es mejorar la accesibilidad y usabilidad.
+- Ejemplos:
+  - Asociar un `<label>` con un `<input>` mediante el atributo for:
+    - El atributo for del `<label>` debe coincidir con el valor del atributo id del `<input>`. Esto crea una asociación explícita entre el campo de entrada y su etiqueta.
+    ```html
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" />
+    ```
+    - En este caso, hacer clic en el texto "Username:" enfoca el campo de entrada.
+
+  - Incluir el `<input>` dentro del `<label>`:
+    - Otra forma de asociar un `<label>` con un `<input>` es anidar el elemento `<input>` dentro del elemento `<label>`. Esta asociación implícita no requiere los atributos for e id.
+    ```html
+      <label>Username:
+        <input type="text" name="username" />
+      </label>
+    ```
+    - Al hacer clic en el texto "Username:", también se enfoca el campo de entrada.
+
+
+  [Ver documentación etiqueta label "W3C"](https://www.w3schools.com/tags/tag_label.asp)
+
+---
+
 - Código ejemplo:
 ```html
 <form action="/action_page.php">
@@ -160,6 +186,8 @@
 - [Ver código formulario](formulario_sencillo.html)
 
 ---
+
+
 
 ### Atributos en la etiqueta `<input>`
 - Importancia name y value
@@ -236,16 +264,18 @@
 
 - `Checkbox`
   - Permite al usuario seleccionar una o más opciones de un conjunto.
+  - No son excluyentes.
   ```html
   <input type="checkbox" name="exampleCheckbox" />
   ```
 
 - `Radio`
   - Permite al usuario seleccionar solo una opción de un conjunto de opciones.
+  - Son excluyentes. Es necesario indicar el value.
   ```html
   <input type="radio" name="exampleRadio" value="option1" />
   ```
-
+        
 - `Color`
   - Permite al usuario seleccionar un color usando un selector de color.
   ```html
@@ -344,9 +374,9 @@
 
 - `disabled`
   - Desactiva el campo de entrada.
-    ```html
-    <input type="text" name="exampleText" disabled />
-    ```
+  ```html
+  <input type="text" name="exampleText" disabled />
+  ```
 
 - `form`
   - Asocia el campo de entrada con uno o más formularios.ç
