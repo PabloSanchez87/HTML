@@ -147,7 +147,7 @@
 
 ---
 
-### Etiwueta `<label>`
+### Etiqueta `<label>`
 - Se utiliza para definir una etiqueta para un elemento `<input>`
 - Principal poósito es mejorar la accesibilidad y usabilidad.
 - Ejemplos:
@@ -171,23 +171,54 @@
 
   [Ver documentación etiqueta label "W3C"](https://www.w3schools.com/tags/tag_label.asp)
 
+
+---
+### Etiqueta `textarea`
+-  Se utiliza para crear un área de texto de varias líneas donde los usuarios pueden ingresar texto.
+-  A diferencia de la etiqueta `<input>` con **type="text"**, que solo permite una sola línea de texto, `<textarea>` permite al usuario escribir párrafos completos y textos más largos.
+- Atributos más habituales: name, rows, cols,..
+
+```html
+<label for="textarea">Lorem Ipsum</label>
+<textarea id="textarea" name="textarea" rows="4" cols="50">
+Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500
+</textarea>
+```
+
+  [Ver documentación etiqueta texarea "W3C"](https://www.w3schools.com/tags/tag_textarea.asp)
+
 ---
 
-- Código ejemplo:
+### Etiqueta `select`
+- Se utiliza para crear un menú desplegable que permite al usuario seleccionar una o más opciones de una lista predefinida. 
+- Junto con la etiqueta `<option>`, que define las opciones dentro del menú, el `<select>` permite a los usuarios hacer selecciones de una manera estructurada.
+- Atributos más habituales: name, id, multiple, size...
+- Atributos más comunes de `<option>`: value, selected, disabled.
+```html
+<select name="opciones">
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+</select>
+```
+
+  [Ver documentación etiqueta select "W3C"](https://www.w3schools.com/tags/tag_select.asp)
+
+---
+
+### Código ejemplo sencillo:
 ```html
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
-  <input ty
+</form>
 ```
 - [Ver código formulario Google](formulario_google.html)
 - [Ver código formulario](formulario_sencillo.html)
 
 ---
-
-
 
 ### Atributos en la etiqueta `<input>`
 - Importancia name y value
@@ -195,152 +226,6 @@
   - { Clave - valor }
     - Clave va a ser el valor del atributo name
     - Valor será el valor del atributo value
-
-- `name`
-  - Especifica el nombre del campo de entrada.
-  ```html
-  <input type="text" name="exampleText" />
-  ```
-
-- `value`
-  - Especifica el valor inicial del campo de entrada.
-  ```html
-  <input type="text" name="exampleText" value="Initial value" />
-  ```
-
-- `Text`    
-  - Permite al usuario ingresar texto de una sola línea.
-  ```html
-  <input type="text" name="exampleText" />
-  ```
-
-- `URL`
-  - Permite al usuario ingresar una URL, con validación automática de formato.
-  ```html
-  <input type="url" name="exampleURL" />
-  ```
-
-- `Number`
-  - Permite al usuario ingresar un número, con opciones de incremento y decremento.
-  ```html
-  <input type="number" name="exampleNumber" />
-  ```
-
-- `Password`
-  - Permite al usuario ingresar una contraseña, ocultando los caracteres ingresados.
-  ```html
-  <input type="password" name="examplePassword" />
-  ```
-
-- `Email`
-  - Permite al usuario ingresar una dirección de correo electrónico, con validación automática del formato.
-  ```html
-  <input type="email" name="exampleEmail" />
-  ```
-
-- `Button`
-  - Un botón que puede configurarse para realizar cualquier acción definida por JS.
-  ```html
-  <input type="button" value="Click Me" />
-  ```
-
-- `Submit`
-  - Un botón que envía el formulario cuando es clickeado.
-  ```html
-  <input type="submit" value="Submit" />
-  ```
-
-- `File`
-  - Permite al usuario seleccionar un archivo para subir.
-  ```html
-  <input type="file" name="exampleFile" />
-  ```
-
-- `Hidden`
-  - Un campo que n es visible para el usuario, utilizado para almacenar información en el formulario.
-  ```html
-  <input type="hidden" name="exampleHidden" value="secretValue" />
-  ```
-
-- `Checkbox`
-  - Permite al usuario seleccionar una o más opciones de un conjunto.
-  - No son excluyentes.
-  ```html
-  <input type="checkbox" name="exampleCheckbox" />
-  ```
-
-- `Radio`
-  - Permite al usuario seleccionar solo una opción de un conjunto de opciones.
-  - Son excluyentes. Es necesario indicar el value.
-  ```html
-  <input type="radio" name="exampleRadio" value="option1" />
-  ```
-        
-- `Color`
-  - Permite al usuario seleccionar un color usando un selector de color.
-  ```html
-  <input type="color" name="exampleColor" />
-  ```
-
-- `Date`
-  - Permite al usuario seleccionar una fecha del calendario.
-  ```html
-  <input type="date" name="exampleDate" />
-  ```
-
-- `Datetime-local`
-  - Permite al usuario selecciona una fecha y una hora (sin zona horaria).
-  ```html
-  <input type="datetime-local" name="exampleDatetimeLocal" />
-  ```
-
-- `Imagen`
-  - Se usa para enviar un formulario cuando se hace clic en la imangen.
-  ```html
-  <input type="image" src="example.jpg" alt="Example Image" />
-  ```
-
-- `Month`
-  - Permite al usuario seleccionar un mes y un añi, sin día específico.
-  ```html
-  <input type="month" name="exampleMonth" />
-  ```
-
-- `Range`
-  - Permite al usuario seleccionar un valor de un rango específido (deslizador)
-  ```html
-  <input type="range" name="exampleRange" />
-  ```
-
-- `Reset`
-  - Restablece todos los calores de los campos del formulario o sus valores iniciales.
-  ```html
-  <input type="reset" value="Reset" />
-  ```
-
-- `Search`
-  - Permite al usuario ingresar una cadena de búsqueda, a menudo acompañado de funciones de autocompletar y sugerencias.
-  ```html
-  <input type="search" name="exampleSearch" />
-  ```
-
-- `Tel`
-  - Permite al usuario ingresar un número de teléfono.
-  ```html
-  <input type="tel" name="exampleTel" />
-  ```
-
-- `Time`
-  - Permite al usuario seleccionar una hora.
-  ```html
-  <input type="time" name="exampleTime" />
-  ```
-
-- `Week`
-  - Permite al usuario seleccionar una semana y un año, sin un día específico.
-  ```html
-  <input type="week" name="exampleWeek" />
-  ```
 
 - `accept`
   - Especifica los tipos de archivos que el servidor acepta (usado con input type="file").
@@ -366,16 +251,59 @@
   <input type="text" name="exampleText" autofocus />
   ```
 
+- `Button`
+  - Un botón que puede configurarse para realizar cualquier acción definida por JS.
+  ```html
+  <input type="button" value="Click Me" />
+  ```
+
+- `Checkbox`
+  - Permite al usuario seleccionar una o más opciones de un conjunto.
+  - No son excluyentes.
+  ```html
+  <input type="checkbox" name="exampleCheckbox" />
+  ```
+
 - `checked`
   - Indica que un input de tipo radio o checkbox debe seleccionarse inicialmente.
   ```html
   <input type="checkbox" name="exampleCheckbox" checked />
   ```
 
+- `Color`
+  - Permite al usuario seleccionar un color usando un selector de color.
+  ```html
+  <input type="color" name="exampleColor" />
+  ```
+
+- `Date`
+  - Permite al usuario seleccionar una fecha del calendario.
+  ```html
+  <input type="date" name="exampleDate" />
+  ```
+
+- `Datetime-local`
+  - Permite al usuario selecciona una fecha y una hora (sin zona horaria).
+  ```html
+  <input type="datetime-local" name="exampleDatetimeLocal" />
+  ```
+
 - `disabled`
   - Desactiva el campo de entrada.
   ```html
   <input type="text" name="exampleText" disabled />
+  ```
+
+- `Email`
+  - Permite al usuario ingresar una dirección de correo electrónico, con validación automática del formato.
+  ```html
+  <input type="email" name="exampleEmail" />
+  ```
+
+- `File`
+  - Permite al usuario seleccionar un archivo para subir.
+  ```html
+  <input type="file" name="exampleFile" />
   ```
 
 - `form`
@@ -388,6 +316,18 @@
   - Especifica la URL a la que se envía el formulario cuando se envía el input de tipo submit o image.
   ```html
   <input type="submit" formaction="/submit-form" />
+  ```
+
+- `Hidden`
+  - Un campo que n es visible para el usuario, utilizado para almacenar información en el formulario.
+  ```html
+  <input type="hidden" name="exampleHidden" value="secretValue" />
+  ```
+
+  - `Imagen`
+  - Se usa para enviar un formulario cuando se hace clic en la imangen.
+  ```html
+  <input type="image" src="example.jpg" alt="Example Image" />
   ```
 
 - `list`
@@ -418,12 +358,34 @@
   <input type="number" name="exampleNumber" min="1" />
   ```
 
+- `Month`
+  - Permite al usuario seleccionar un mes y un añi, sin día específico.
+  ```html
+  <input type="month" name="exampleMonth" />
+  ```
+
 - `multiple`
   - Permite seleccionar múltiples archivos (usado con input type="file").
   ```html
   <input type="file" name="exampleFile" multiple />
   ```
 
+- `name`
+  - Especifica el nombre del campo de entrada.
+  ```html
+  <input type="text" name="exampleText" />
+  ```
+
+- `Number`
+  - Permite al usuario ingresar un número, con opciones de incremento y decremento.
+  ```html
+  <input type="number" name="exampleNumber" />
+  ```
+- `Password`
+  - Permite al usuario ingresar una contraseña, ocultando los caracteres ingresados.
+  ```html
+  <input type="password" name="examplePassword" />
+  ```
 - `pattern`
   - Especifica una expresión regular que el valor debe coincidir.
   ```html
@@ -436,6 +398,19 @@
   <input type="text" name="exampleText" placeholder="Enter text here" />
   ```
 
+- `Radio`
+  - Permite al usuario seleccionar solo una opción de un conjunto de opciones.
+  - Son excluyentes. Es necesario indicar el value.
+  ```html
+  <input type="radio" name="exampleRadio" value="option1" />
+  ```
+
+- `Range`
+  - Permite al usuario seleccionar un valor de un rango específido (deslizador)
+  ```html
+  <input type="range" name="exampleRange" />
+  ```
+
 - `readonly`
   - Hace que el campo de entrada sea de solo lectura.
   ```html
@@ -446,6 +421,18 @@
   - Indica que el campo de entrada es obligatorio.
   ```html
   <input type="text" name="exampleText" required />
+  ```
+
+- `Reset`
+  - Restablece todos los calores de los campos del formulario o sus valores iniciales.
+  ```html
+  <input type="reset" value="Reset" />
+  ```
+
+- `Search`
+  - Permite al usuario ingresar una cadena de búsqueda, a menudo acompañado de funciones de autocompletar y sugerencias.
+  ```html
+  <input type="search" name="exampleSearch" />
   ```
 
 - `size`
@@ -465,6 +452,45 @@
   <input type="number" name="exampleNumber" step="0.1" />
   ```
 
+- `Submit`
+  - Un botón que envía el formulario cuando es clickeado.
+  ```html
+  <input type="submit" value="Submit" />
+  ```
 
+- `Tel`
+  - Permite al usuario ingresar un número de teléfono.
+  ```html
+  <input type="tel" name="exampleTel" />
+  ```
 
+- `Text`    
+  - Permite al usuario ingresar texto de una sola línea.
+  ```html
+  <input type="text" name="exampleText" />
+  ```
+
+- `Time`
+  - Permite al usuario seleccionar una hora.
+  ```html
+  <input type="time" name="exampleTime" />
+  ```
+
+- `URL`
+  - Permite al usuario ingresar una URL, con validación automática de formato.
+  ```html
+  <input type="url" name="exampleURL" />
+  ```
+
+- `value`
+  - Especifica el valor inicial del campo de entrada.
+  ```html
+  <input type="text" name="exampleText" value="Initial value" />
+  ```
+
+- `Week`
+  - Permite al usuario seleccionar una semana y un año, sin un día específico.
+  ```html
+  <input type="week" name="exampleWeek" />
+  ```
 
