@@ -493,4 +493,25 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
   ```html
   <input type="week" name="exampleWeek" />
   ```
+---
 
+### `fieldset` y `leyend`
+
+- Explicación del Ejemplo:
+    - `<fieldset>` : Crea un grupo de campos relacionados dentro del formulario.
+    - `<legend>`: Define un título para el grupo de campos (`<fieldset>`), proporcionando una etiqueta descriptiva para los campos agrupados.
+<br>
+<div style="text-align: center;">
+  <img src="fieldsetyleyend.png"/>
+</div>
+<br>
+
+- [Ver código fieldset y leyend](fieldset_leyend.html)
+
+---
+
+## Modificadores de validación y obligatoriedad
+- Uso siempre aconsejado.
+- Nos ayudan pero no nos salvan, no dan seguridad.
+- Cuando estés en el back-end, nunca confíes en el front.
+- required, minlength, maxlength, min, max, pattern, type:email, url,etc

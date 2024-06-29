@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Fieldset y Legend</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Introduzca su nombre." required><br><br>
+            
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname" placeholder="Introduzca sus apellidos." required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Introduzca su email" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color"><br><br>
+            
+            <label for="food">Comida favorita:</label>
+            <input type="text" id="food" name="food" placeholder="Introduzca su comida favorita"><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
