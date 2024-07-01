@@ -64,7 +64,7 @@
 </div> 
 <br>
 
-[Ver código de ejemplo](html/ejercicio4.html)
+[Ver código de ejemplo](html/ejercicio3.html)
 
 ---
 ---
