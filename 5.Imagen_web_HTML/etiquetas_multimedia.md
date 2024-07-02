@@ -30,6 +30,8 @@
 - Es una ventana que permite acceder a un recurso que se encuentra ubicado en un contexto distinto a la página que se está mostrando en el navegador.
 - Básicamente, permite incrustar un documento o parte de un documento dentro de una página HTML.
 
+- [Ver documentación `<iframe>` W3C](https://www.w3schools.com/html/html_iframe.asp)
+
 ### Atributos
 - `src`: la URI del recurso incrustado.
 - `sredoc`: contiene el código HTML que mostrar dentro del elemento `<iframe>`. Si existe este atributo, se impone a la referencia proporcionada por el atributo src.
@@ -62,7 +64,89 @@
 - [Ver código iframe Google Maps](html/iframe/ejercicio6.html)
 ---
 
+### Extra
+- **Atributo `name`**
+    - Es posible utilizar el atributo name en nuestro `<iframe>` para darle un nombre al marco y cargar direcciones URL diferentes a través de una etiqueta de enalce `<a>`, haciendo referencia al marco a tracés del atributo `<target>`
 
+<br>
+<div style="text-align: center;">
+    <img src="img/name.png"/>
+</div><br>
 
+- [Ver código iframe atributo name](html/iframe/ejercicio8.html)
+<br><br>
 
+- **Atributo `srcdoc`**
+    - Por otro lado, el atributo `srcdoc` nos permite indicar directamente el código fuente del iframe en su valor, algo que puede ser interesante para crear contenido autogenerado a demanda.
+
+<br>
+<div style="text-align: center;">
+    <img src="img/srcdoc.png"/>
+</div><br>
+
+--- 
+
+## Etiqueta `<video>`
+- En HTML5 se introduce la interesante posibilidad de mostrar videos directamente desde nustro navegador.
+- Lo navegadores son capaces de msotrar imágenes, reproducir videos y audio.
+
+### Atributos
+- `src`: Archivo o URL del video a reproducir. Obligatoria si no tiene etiquetas dentro.
+- `width`: Indicar el tamaño de ancho del video.
+- `height`: Indicar el tamaño de alto del video.
+
+### Atributos de control
+- `autoplay`: Comienza a reproducir el video automáticamente. Ojo, está sujeto a normas del navegador. (muy limitado)
+- `loop`: Vuelve a iniciar el video cuando finaliza su reproducción (en bucle).
+- `muted`: Establece que el video se reproduzca con sonido muteado.
+- `controls`: Muestra los controles de reproducción (por defecto no se muestran)
+- `playsinline`: Reproduce el video en línea, es decir, en su área de reproducción.
+
+### Atributos de precarga
+- `poster`: Muestra una imagen a modo de presentación.
+- `preload`: Indica como realizar la precarga del video.
+
+### Formatos
+<div style="text-align: center;">
+    <img src="img/mp4.png"/>
+</div>
+
+#### Uso de source (cada vez menos usado. Mejor usar mp4)
+```html
+<video width="640" height="480">
+    <source src="video.mp4" type="video/mp4" />
+    <source src="video.webm" type="video/webm"
+    <source src="video.ogv" type="video/ogg"
+    <img src="imagen.png" alt="Video no soportado" />
+    Su navegador no soporta contenido multimedia.
+</video>
+```
+
+- [Ver documentación video W3C](https://www.w3schools.com/html/html5_video.asp)
+
+- [Ver código etiqueta video](html/ejercicio9.html)
+
+---
+## Etiqueta `<video>`
+- Lo mismo que la etiqueta video pero con audio.
+
+### Formatos
+<div style="text-align: center;">
+    <img src="img/audio.png"/>
+</div>
+
+- [Ver documentación audio W3C](https://www.w3schools.com/html/html5_audio.asp)
+- [Ver código etiqueta audio](html/ejercicio10.html)
+
+---
+## Etiqueta `<canvas>`
+- Se utilizará para que librerías gráficas usen este contenedor a modo de lienzo par apoder dibujar y montar gráficos (JS)
+
+- [Ver documentación canvas W3C](https://www.w3schools.com/html/html5_canvas.asp)
+
+---
+## Etiqueta `<map>` y `<area>`
+- Se utilizan para realizar secciones de una imagen que puedan enlazar a diferentes secciones.
+
+- [Ver documentación map y area W3C](https://www.w3schools.com/tags/tag_map.asp)
 
