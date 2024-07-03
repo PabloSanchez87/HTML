@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo etiquetas interactivas.</title>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>    
+
+    <!-- Instalación select2-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo uso library select2 (JS) </h1>
+        <p><a href="submenu_interactivas.html">👈 Volver atrás </a></p>
+        <hr />
+    </header>
+
+    <main>
+        <p>Selecciona tu pais favorito:
+            <select name="" id="selecttest2">
+                <option value="1">España</option>
+                <option value="2">Francia</option>
+                <option value="3">Portugal</option>
+                <option value="4">Alemania</option>
+                <option value="5">Andorra</option>
+                <option value="6">Marruecos</option>
+                <option value="7">Italia</option>
+                <option value="8">Bélgica</option>
+                <option value="9">Luxemburgo</option>
+                <option value="10">Inglaterra</option>
+                <option value="11">Irlanda</option>
+                <option value="12">Escocia</option>
+            </select>
+        </p>
+    </main>
+
+    <footer>
+        <hr />
+        © Pablo Sánchez
+    </footer>
+
+
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('#selecttest2').select2();
+        });
+    </script>
+</body>
+
+</html>
