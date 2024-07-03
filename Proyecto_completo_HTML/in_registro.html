@@ -90,8 +90,52 @@
     <hr />
   </header>
 
-
   <main>
+    <h1>Registrate</h1>
+    <p>Formulario de registro</p>
+    <form action="post" enctype="multipart/form-data">
+      <p>
+        <label for="name">Nombre completo</label>
+        <input type="text" name="name" id="name">
+      </p>
+
+      <p>
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday" id="birthday">
+      </p>
+
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+
+      <p>
+        <label for="adress">Dirección</label>
+        <input type="text" name="adress" id="adress">
+      </p>
+
+      <p>
+        <label for="web">Página Web</label>
+        <input type="url" name="web" id="web">
+      </p> 
+
+      <p>
+        <label for="photo">Página Web</label>
+        <input type="file" name="photo" id="photo">
+      </p>
+
+      <p>
+        <label for="bio">Biografía</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+      </p> 
+
+      <p>
+        <button>Enviar</button>
+        <input type="reset" value="Borrar formulario">
+      </p>
+
+    </form>
+
 
   </main>
 
