@@ -39,6 +39,7 @@ Aprende a crear formularios web interactivos y efectivos, y explora sus diferent
 - [Atributos etiqueta Input](https://github.com/PabloSanchez87/HTML/blob/main/4.Formularios_HTML/Formularios.md#atributos-en-la-etiqueta-input)
   #### Código ejemplo
     - [Ejemplos de formularios](https://github.com/PabloSanchez87/HTML/tree/main/4.Formularios_HTML/Ejercicios_practicos_formularios)
+- [🌐 Navega por los distintos ejemplos](https://pablosanchez87.github.io/HTML/4.Formularios_HTML/Ejercicios_practicos_formularios/index.html)
 
 ## 5 - Imágenes y Multimedia en HTML
 Descubre cómo integrar imágenes, audio, video y otros elementos multimedia en tus páginas web.
@@ -67,6 +68,7 @@ Descubre cómo integrar imágenes, audio, video y otros elementos multimedia en 
     - [Ejemplo uso etiqueta datalist](https://github.com/PabloSanchez87/HTML/blob/main/5.Imagen_web_HTML/html/interactivas/ejercicio15.html)
     - [Ejemplo uso library select2 (JS)](https://github.com/PabloSanchez87/HTML/blob/main/5.Imagen_web_HTML/html/interactivas/ejercicio16.html)
     - [Ejemplo uso Wysiwyg (textarea con formato)](https://github.com/PabloSanchez87/HTML/blob/main/5.Imagen_web_HTML/html/interactivas/ejercicio17.html)
+  - [🌐 Navega por los distintos ejemplos](https://pablosanchez87.github.io/HTML/5.Imagen_web_HTML/html/index.html)
 
 ## 6 - Favicon
 Instrucciones para crear y configurar un favicon para tu sitio web.
@@ -77,6 +79,8 @@ Instrucciones para crear y configurar un favicon para tu sitio web.
  
 ## Proyecto Completo en HTML
 Un proyecto completo que integra gran parte de lo aprendido en las secciones anteriores.
+### 🌐 Navega por el Proyecto Final 
+- [Visita el proyecto](https://pablosanchez87.github.io/HTML/Proyecto_completo_HTML/)
 - [Raíz proyecto](Proyecto_completo_HTML)
 
 ## Contribuciones
